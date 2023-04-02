@@ -1,0 +1,13 @@
+Curso de Engenharia de Software - UniEVANGÉLICA 
+Disciplina de Programação Web 
+Dev: Luis Eduardo Godinho Santos 
+
+function fatorial(num) {
+  if (num === 0 || num === 1) {
+    return 1;
+  }
+  return num * fatorial(num - 1);
+}
+
+let num = 5;
+console.log(fatorial(num)); // 120
