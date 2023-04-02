@@ -1,0 +1,17 @@
+Curso de Engenharia de Software - UniEVANGÉLICA 
+Disciplina de Programação Web 
+Dev: Luis Eduardo Godinho Santos 
+
+function countWords(str) {
+  let count = 0;
+  let words = str.split(' ');
+  for (let i = 0; i < words.length; i++) {
+    if (words[i] !== '') {
+      count++;
+    }
+  }
+  return count;
+}
+
+let str = 'Lorem ipsum dolor sit amet';
+console.log(countWords(str)); // 5
