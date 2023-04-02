@@ -1,0 +1,18 @@
+Curso de Engenharia de Software - UniEVANGÉLICA 
+Disciplina de Programação Web 
+Dev: Luis Eduardo Godinho Santos 
+
+function fibonacci(num) {
+  let a = 0, b = 1, temp;
+  let fibArr = [a, b];
+  while (b < num) {
+    temp = a;
+    a = b;
+    b = temp + b;
+    fibArr.push(b);
+  }
+  return fibArr;
+}
+
+let num = 50;
+console.log(fibonacci(num)); // [0, 1, 1, 2, 3, 5, 8, 13, 21, 34]
